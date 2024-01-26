@@ -1,0 +1,3 @@
+<launch>
+    <node pkg="bag_to_video_pkg" type="bag_to_video" name="bag_to_video" output="log"/>
+</launch>
