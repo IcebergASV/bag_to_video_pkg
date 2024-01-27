@@ -3,12 +3,17 @@ import rospy
 from sensor_msgs.msg import Image
 from cv_bridge import CvBridge, CvBridgeError
 import cv2
+import os
 
 class BagToVideo:
     def __init__(self):
         self.bridge = CvBridge()
         self.subscriber = rospy.Subscriber("/camera/color/image_raw", Image, self.callback)
-        self.out = cv2.VideoWriter('output.avi', cv2.VideoWriter_fourcc(*'XVID'), 20.0, (640,480))
+
+        output_directory = '/home/daviddavila/Documents'
+        output_filename = os.path.join(output_directory, 'output.mp4')
+        self.out = cv2.VideoWriter(output_filename, cv2.VideoWriter_fourcc(*'mp4v'), 20.0, (640,480))
+
         rospy.loginfo("BagToVideo initialized, subscribing to /camera/color/image_raw")
 
     def callback(self, data):
