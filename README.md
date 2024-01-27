@@ -37,4 +37,4 @@ The package subscribes to the following topic to receive camera data:
 - The script saves the output video in the root directory of the package as output.avi. You can modify the script to change the format, filename, or saving directory.
 
 ## Customization
-To customize the package for different topics or different video settings, edit the **bag_to_video.py** script located in the **scripts** directory of the package.
+To customize the package for different topics or different video settings, edit the **bag_to_video.py** script located in the **scripts** directory of the package. Modify where you would like the output_directory variable point at. 
