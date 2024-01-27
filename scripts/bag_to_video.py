@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/env python
 import rospy
 from sensor_msgs.msg import Image
 from cv_bridge import CvBridge, CvBridgeError
@@ -24,7 +24,7 @@ class BagToVideo:
         cv2.waitKey(3)
 
 def main():
-    rospy.init_node('bag_to_video_node', anonymous=True)
+    rospy.init_node('bag_to_video', anonymous=True)
     bag_to_video = BagToVideo()
     rospy.loginfo("bag_to_video_node started")
     try:
