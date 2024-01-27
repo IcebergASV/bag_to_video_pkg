@@ -31,7 +31,7 @@ Ensure that the ROS environment is sourced in this terminal as well.
 
 ## Topics
 The package subscribes to the following topic to receive camera data:
-- **/camera/image_raw**: This topic is expected to provide images from the camera in a raw format.
+- **/camera/color/image_raw**: This topic is expected to provide images from the camera in a raw format.
 
 ## Output
 - The script saves the output video in the root directory of the package as output.avi. You can modify the script to change the format, filename, or saving directory.

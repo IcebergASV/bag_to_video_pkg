@@ -7,9 +7,9 @@ import cv2
 class BagToVideo:
     def __init__(self):
         self.bridge = CvBridge()
-        self.subscriber = rospy.Subscriber("/camera/image_raw", Image, self.callback)
+        self.subscriber = rospy.Subscriber("/camera/color/image_raw", Image, self.callback)
         self.out = cv2.VideoWriter('output.avi', cv2.VideoWriter_fourcc(*'XVID'), 20.0, (640,480))
-        rospy.loginfo("BagToVideo initialized, subscribing to /camera/image_raw")
+        rospy.loginfo("BagToVideo initialized, subscribing to /camera/color/image_raw")
 
     def callback(self, data):
         try:
