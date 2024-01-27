@@ -25,7 +25,7 @@ This package specifically listens to a camera topic within a ROS bag file and sa
    roslaunch bag_to_video_pkg bag_to_video.launch
 2. In a separaete terminal, play the ROS bag file you want to process:
    ```bash
-   roslaunch play <path_to_your_bag_file.bag>
+   rosbag play <path_to_your_bag_file.bag>
    
 Ensure that the ROS environment is sourced in this terminal as well.
 
