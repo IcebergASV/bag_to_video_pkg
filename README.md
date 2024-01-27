@@ -19,13 +19,18 @@ This package specifically listens to a camera topic within a ROS bag file and sa
 4. Source the environment: `source devel/setup.bash`.
 
 
-## RUnning the Package
+## Running the Package
 1. To launch the package, use the following command:
    ```bash
    roslaunch bag_to_video_pkg bag_to_video.launch
 2. In a separaete terminal, play the ROS bag file you want to process:
    ```bash
    rosbag play <path_to_your_bag_file.bag>
+3. A new window will pop open and you can visualize the ros bag contents at the same time
+4. To verify everything is working and the images are being converted you can run the following command in a new window and visualize the ros logs of the script.
+   ```bash
+   rostopic echo /rosout
+
    
 Ensure that the ROS environment is sourced in this terminal as well.
 
