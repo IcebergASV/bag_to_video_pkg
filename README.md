@@ -43,3 +43,33 @@ The package subscribes to the following topic to receive camera data:
 
 ## Customization
 To customize the package for different topics or different video settings, edit the **bag_to_video.py** script located in the **scripts** directory of the package. Modify where you would like the *output_directory* variable point at. 
+
+## Ubuntu Video Editors
+### Kdenlive for Editing ROS Bag Videos
+After converting ROS bag files to video format using the **bag_to_video_pkg**, you might need to edit these videos for various purposes, such as trimming unnecessary footage or highlighting specific segments. For Ubuntu users, a highly recommended video editing tool is **Kdenlive**.
+
+#### Why Kdenlive?
+- **Compatibility**: Kdenlive is well-suited for Ubuntu and integrates seamlessly with its desktop environment.
+- **Features**: It offers a wide range of editing features which are perfect for handling videos converted from ROS bag files.
+- **Ease of Use**: Kdenlive has a user-friendly interface that is suitable for both beginners and professional editors.
+
+#### Installing Kdenlive
+1. Kdenlive can be easily installed from the Ubuntu Software Store. Follow these steps:
+2. Open the Ubuntu Software Store.
+Search for "Kdenlive".
+3. Click on the Kdenlive application and press "Install".
+
+#### Editing ROS Bag Videos
+Once you have Kdenlive installed, you can use it to edit the videos created by the **bag_to_video_pkg**. This can be particularly useful for:
+- Removing unnecessary footage from the video.
+- Enhancing video quality by adjusting color, contrast, and brightness.
+
+#### Steps to Edit Videos
+1. Launch Kdenlive.
+2. Import your converted video file (now in MP4 format) into Kdenlive.
+3. Use Kdenlive's timeline and tools to trim or adjust the video as needed.
+4. Export the edited video in your desired format. Click this link for an [mp4](https://www.youtube.com/watch?v=u-wAiKWEhTE) format.
+
+
+## Next Steps?
+If you want to create a custom dataset from the mp4 video you created and need to take many screenshots, check out this [repository](https://github.com/DavidGuamanDavila/auto_screenshot_util/tree/main), which automates screenshot-taking. 
